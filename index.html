@@ -616,7 +616,7 @@ h1,h2,h3,.display{font-family:var(--f-display);font-weight:400;letter-spacing:0;
 @media(max-width:560px){
   .reviews-grid,.foot-grid{grid-template-columns:1fr}
   /* mobile: show 3 reviews max */
-  .reviews-grid .review-card:nth-of-type(n+4){display:none}
+  .reviews-grid .review-card:nth-of-type(n+3){display:none}
   /* tighter menu tabs on phones */
   .tab{font-size:1.1rem;letter-spacing:.5px;padding:13px 8px}
   .rating-hero{flex-direction:column;gap:14px;padding:22px 20px}
@@ -628,6 +628,7 @@ h1,h2,h3,.display{font-family:var(--f-display);font-weight:400;letter-spacing:0;
   .stat::after{display:none!important}
   .announce{font-size:.7rem;padding:8px 10px}
   .hero{min-height:100dvh}
+  .hero-img{object-position:right center}
   .hero-btns{flex-direction:column}
   .hero-btns .btn{justify-content:center}
   .stats{margin-top:32px}
