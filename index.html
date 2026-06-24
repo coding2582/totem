@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Totem Family Diner | Everett's Favorite Diner Since 1953</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+
+<!-- ============ SEO + LOCAL ============ -->
+<meta name="description" content="Totem Family Diner is Everett's classic diner since 1953. Breakfast all day, award-winning house-smoked BBQ, burgers, and fresh-baked pies on Rucker Ave. 4.6 stars, 3,395+ Google reviews. Dine-in, takeout & catering." />
+<meta name="keywords" content="diner near me, breakfast near me, Totem Family Diner, diner Everett WA, breakfast Everett, BBQ catering Everett, family restaurant Everett, comfort food Everett, chicken fried steak Everett, pie Everett, Rucker Ave diner, smoked meats Everett" />
+<meta name="author" content="Totem Family Diner" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.totemdiner.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant" />
+<meta property="og:title" content="Totem Family Diner | Everett's Favorite Diner Since 1953" />
+<meta property="og:description" content="Classic Everett diner since 1953. Breakfast all day, award-winning house-smoked BBQ, and fresh pies. 4.6 stars from 3,395+ reviews." />
+<meta property="og:image" content="images/hero.jpg" />
+<meta property="og:url" content="https://www.totemdiner.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Totem Family Diner" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Totem Family Diner | Everett's Favorite Diner Since 1953" />
+<meta name="twitter:description" content="Classic Everett diner since 1953. Breakfast all day, award-winning smoked BBQ, and fresh pies. 4.6 stars, 3,395+ reviews." />
+<meta name="twitter:image" content="images/hero.jpg" />
+<meta name="theme-color" content="#b0231c" />
+
+<!-- Local Business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Totem Family Diner",
+  "image": "https://www.totemdiner.com/images/hero.jpg",
+  "servesCuisine": ["American", "Breakfast", "Diner", "BBQ", "Comfort Food"],
+  "priceRange": "$10-20",
+  "telephone": "+14252523277",
+  "url": "https://www.totemdiner.com/",
+  "foundingDate": "1953",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4410 Rucker Ave",
+    "addressLocality": "Everett",
+    "addressRegion": "WA",
+    "postalCode": "98203",
+    "addressCountry": "US"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "3395"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"07:00","closes":"15:00"}
+  ]
+}
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* =====================================================================
+   REBRAND PANEL — edit these ~16 lines to re-skin the whole site.
+   Art direction: "Everett 1953" — mid-century roadside diner, clean web.
+   Cream paper + charcoal ink + cherry red + mustard accent + soft teal.
+   Chunky slab headlines, Poppins subheads, warm Lora body.
+   ===================================================================== */
+:root{
+  --paper:#f5efe3;          /* cream background */
+  --paper-2:#ece2d0;        /* deeper cream for alt sections */
+  --ink:#1f1b1a;            /* charcoal text */
+  --ink-soft:#5c5450;       /* muted charcoal */
+  --oxblood:#b0231c;        /* cherry red — primary */
+  --oxblood-dark:#8c1b15;   /* cherry hover depth */
+  --neon:#c12b1e;           /* vivid cherry — CTA + accent glow */
+  --teal:#3b7a78;           /* soft teal — secondary */
+  --teal-soft:#dce9e7;      /* pale teal wash */
+  --gold:#e0a82e;           /* mustard accent */
+  --gold-soft:#edc468;      /* light mustard */
+  --night:#231c19;          /* warm charcoal dark */
+  --night-2:#171210;        /* deep dark footer */
+  --line:#e0d3bc;           /* warm hairline */
+  --white:#fffdf8;
+
+  --shadow-sm:0 2px 10px rgba(31,27,26,.10);
+  --shadow:0 16px 40px rgba(31,27,26,.16);
+  --shadow-lg:0 30px 70px rgba(31,27,26,.26);
+  --glow:0 0 26px rgba(193,43,30,.42);
+
+  --r-sm:6px; --r:14px; --r-lg:24px; --r-pill:999px;
+
+  --f-display:'Alfa Slab One', Georgia, serif;         /* chunky retro headlines */
+  --f-serif:'Lora', Georgia, serif;                    /* editorial italic accent */
+  --f-script:'Lora', Georgia, serif;                   /* accent word */
+  --f-body:'Lora', Georgia, serif;                     /* roomy body */
+  --f-sub:'Poppins', system-ui, sans-serif;            /* subheads + labels */
+
+  --t:.3s cubic-bezier(.4,0,.2,1);
+  --t-slow:.65s cubic-bezier(.4,0,.2,1);
+  --announce-h:40px;
+  --nav-h:76px;
+}
+
+/* ---------- base ---------- */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+/* warm paper grain on light sections */
+.paper-grain::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+body{
+  font-family:var(--f-body);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.78;
+  font-size:17px;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+section{position:relative}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+.pad{padding:clamp(80px,10vw,140px) 0}
+
+h1,h2,h3,.display{font-family:var(--f-display);font-weight:400;letter-spacing:0;line-height:1.02}
+
+/* eyebrow: Poppins subhead, uppercase letterspaced */
+.kicker{
+  display:inline-block;
+  font-family:var(--f-sub);font-weight:600;font-size:.82rem;
+  text-transform:uppercase;letter-spacing:.16em;
+  color:var(--oxblood);margin-bottom:18px;
+}
+.kicker.light{color:var(--gold-soft)}
+
+.section-head{max-width:760px;margin-bottom:60px}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.section-head.center .kicker{justify-content:center}
+.section-head h2{
+  font-size:clamp(2.6rem,6vw,4.8rem);
+  color:var(--ink);text-transform:uppercase;
+  letter-spacing:.5px;
+}
+.section-head h2 em{font-family:var(--f-serif);color:var(--oxblood);text-transform:none;
+  font-style:italic;font-weight:600;font-size:.82em;display:inline-block}
+.section-head p{color:var(--ink-soft);font-size:1.08rem;margin-top:18px;max-width:60ch}
+.section-head.center p{margin-left:auto;margin-right:auto}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--f-sub);font-weight:600;font-size:.84rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:16px 32px;border-radius:var(--r-pill);
+  cursor:pointer;border:2px solid transparent;
+  transition:transform var(--t), box-shadow var(--t), background var(--t), color var(--t), border-color var(--t);
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(-1px)}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn-primary{background:var(--oxblood);color:var(--paper);box-shadow:var(--shadow-sm)}
+.btn-primary:hover{background:var(--oxblood-dark);box-shadow:var(--shadow)}
+.btn-neon{background:var(--neon);color:var(--white);box-shadow:var(--glow)}
+.btn-neon:hover{background:var(--oxblood-dark)}
+.btn-ghost{background:transparent;color:var(--paper);border-color:rgba(244,236,224,.55)}
+.btn-ghost:hover{background:var(--paper);color:var(--oxblood);border-color:var(--paper)}
+.btn-outline{background:transparent;color:var(--oxblood);border-color:var(--oxblood)}
+.btn-outline:hover{background:var(--oxblood);color:var(--paper)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+
+/* ============ 1. ANNOUNCEMENT BAR ============ */
+.announce{
+  background:var(--ink);color:var(--paper);
+  font-family:var(--f-sub);font-size:.82rem;font-weight:500;text-align:center;
+  padding:10px 16px;letter-spacing:.02em;
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  height:var(--announce-h);display:flex;align-items:center;justify-content:center;
+}
+.announce strong{color:var(--gold);font-weight:700}
+.announce a{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+
+/* ============ 2. NAVBAR ============ */
+.nav{
+  position:fixed;top:var(--announce-h);left:0;right:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding:16px clamp(20px,4vw,44px);
+  transition:background var(--t), box-shadow var(--t), padding var(--t);
+}
+.nav.scrolled{
+  background:rgba(244,236,224,.9);backdrop-filter:blur(16px);
+  box-shadow:0 1px 0 var(--line), var(--shadow-sm);
+  padding-top:10px;padding-bottom:10px;
+}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand .mark{width:52px;height:52px;flex-shrink:0;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}
+.brand-txt{display:flex;flex-direction:column;line-height:1}
+.brand-txt .name{font-family:var(--f-display);font-size:1.7rem;letter-spacing:1.5px;
+  color:var(--paper);transition:color var(--t)}
+.brand-txt .sub{font-family:var(--f-sub);font-weight:500;font-size:.72rem;letter-spacing:.04em;
+  color:var(--gold-soft);transition:color var(--t);margin-top:1px}
+.nav.scrolled .brand-txt .name{color:var(--oxblood)}
+.nav.scrolled .brand-txt .sub{color:var(--ink-soft)}
+
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{
+  font-family:var(--f-sub);
+  font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--paper);position:relative;padding:4px 0;transition:color var(--t);
+  text-shadow:0 1px 8px rgba(0,0,0,.45);
+}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;
+  background:var(--neon);transition:width var(--t)}
+.nav-links a:hover::after,.nav-links a:focus::after{width:100%}
+.nav.scrolled .nav-links a{text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--line)}
+.nav.scrolled .nav-links a:hover{text-decoration-color:var(--neon)}
+.nav.scrolled .nav-links a{color:var(--ink);text-shadow:none}
+.nav.scrolled .nav-links a:hover{color:var(--oxblood)}
+
+.nav-cta{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.nav-call{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:.84rem;
+  color:var(--paper);text-shadow:0 1px 8px rgba(0,0,0,.45);transition:color var(--t)}
+.nav.scrolled .nav-call{color:var(--oxblood);text-shadow:none}
+.nav-call svg{width:16px;height:16px;fill:currentColor}
+.nav .btn{padding:12px 24px;font-size:.76rem}
+
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px;z-index:55}
+.burger span{width:26px;height:3px;background:var(--paper);border-radius:2px;transition:var(--t)}
+.nav.scrolled .burger span{background:var(--oxblood)}
+
+/* mobile overlay */
+.overlay{position:fixed;inset:0;z-index:70;background:var(--night);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;
+  opacity:0;visibility:hidden;transform:translateY(-12px);transition:var(--t)}
+.overlay.open{opacity:1;visibility:visible;transform:none}
+.overlay a{font-family:var(--f-display);font-size:2.2rem;color:var(--paper);letter-spacing:1px}
+.overlay a:hover{color:var(--neon)}
+.overlay .btn{font-family:var(--f-body);font-size:.85rem}
+.overlay-close{position:absolute;top:24px;right:26px;background:none;border:0;color:var(--paper);font-size:2.6rem;cursor:pointer;line-height:1}
+
+/* ============ 3. HERO ============ */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  padding:calc(var(--announce-h) + var(--nav-h) + 48px) 0 48px;
+  background:var(--night);position:relative;overflow:hidden;
+}
+.hero-img{position:absolute;inset:0;z-index:0;object-fit:cover;width:100%;height:100%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(110deg, rgba(13,10,7,.92) 0%, rgba(13,10,7,.6) 45%, rgba(22,17,13,.35) 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:60px;z-index:1;
+  background:linear-gradient(180deg, transparent, rgba(13,10,7,.6))}
+.hero .wrap{z-index:3;color:var(--paper);max-width:880px}
+.status-pill{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(244,236,224,.1);border:1px solid rgba(244,236,224,.28);
+  backdrop-filter:blur(6px);padding:9px 18px;border-radius:var(--r-pill);
+  font-family:var(--f-sub);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:28px;
+}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--gold);position:relative}
+.dot.is-open{background:#5fd494}
+.dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.8}70%{transform:scale(3);opacity:0}100%{opacity:0}}
+
+.hero .est{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.2rem,2.6vw,1.7rem);
+  color:var(--gold-soft);margin-bottom:6px}
+.hero h1{font-size:clamp(3.6rem,12vw,9rem);text-transform:uppercase;text-shadow:0 8px 40px rgba(0,0,0,.5)}
+.hero h1 .neon{font-family:var(--f-serif);font-style:italic;color:var(--gold-soft);text-transform:none;
+  display:inline-block;font-size:.7em}
+.hero-sub{font-size:clamp(1.02rem,2.1vw,1.28rem);max-width:580px;margin:22px 0 36px;
+  color:rgba(244,236,224,.92);font-weight:400}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+
+/* stats strip */
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  margin-top:64px;border:1px solid rgba(244,236,224,.2);border-radius:var(--r-lg);
+  overflow:hidden;backdrop-filter:blur(6px);background:rgba(244,236,224,.06);
+}
+.stat{text-align:center;padding:26px 16px;position:relative}
+.stat:not(:last-child)::after{content:"";position:absolute;right:0;top:18%;height:64%;width:1px;background:rgba(244,236,224,.18)}
+.stat .num{font-family:var(--f-display);font-size:clamp(2.4rem,5vw,3.4rem);color:var(--gold);line-height:1}
+.stat .num .star{color:var(--neon);font-size:.7em}
+.stat .lbl{font-family:var(--f-sub);font-weight:500;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,239,227,.82);margin-top:8px}
+
+/* ============ 4. MARQUEE ============ */
+.marquee{background:var(--oxblood);color:var(--paper);padding:18px 0;overflow:hidden;white-space:nowrap;
+  border-top:2px solid var(--gold);border-bottom:2px solid var(--gold)}
+.marquee-track{display:inline-flex;animation:scroll 36s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-family:var(--f-display);font-size:1.55rem;letter-spacing:2px;text-transform:uppercase;
+  padding:0 30px;display:inline-flex;align-items:center;gap:30px}
+.marquee-track span::after{content:"★";color:var(--gold);font-size:1rem}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============ 5. FAVORITES ============ */
+.favorites{background:var(--paper)}
+.fav-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.fav-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+  box-shadow:var(--shadow);transition:transform var(--t), box-shadow var(--t);display:flex;flex-direction:column}
+.fav-card.feature{grid-row:span 1}
+.fav-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.fav-media{position:relative;overflow:hidden;aspect-ratio:16/11}
+.fav-card.feature{display:grid;grid-template-rows:1fr auto}
+.fav-card.feature .fav-media{aspect-ratio:16/11;height:auto}
+.fav-media img{width:100%;height:100%;object-fit:cover;transition:transform var(--t-slow)}
+.fav-card:hover .fav-media img{transform:scale(1.07)}
+.badge{position:absolute;top:16px;left:16px;background:var(--neon);color:var(--white);
+  font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:6px 14px;border-radius:var(--r-pill);box-shadow:var(--shadow-sm)}
+.fav-body{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
+.fav-body .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.fav-body h3{font-size:1.95rem;color:var(--oxblood);text-transform:uppercase}
+.fav-card.feature .fav-body h3{font-size:2.6rem}
+.price{font-family:var(--f-display);font-size:1.7rem;color:var(--teal);flex-shrink:0}
+.fav-body p{color:var(--ink-soft);font-size:.96rem;margin:10px 0 16px}
+.stars{color:var(--gold);font-size:.95rem;letter-spacing:2px;margin-top:18px}
+.stars small{color:var(--ink-soft);font-family:var(--f-body);font-size:.78rem;letter-spacing:0;margin-left:8px}
+
+/* ============ 6. BBQ FEATURE (real differentiator) ============ */
+.bbq{background:var(--oxblood);color:var(--white);overflow:hidden;position:relative}
+.bbq::before{content:"";position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='4' height='4' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:0}
+.bbq .wrap{position:relative;z-index:1}
+.bbq-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+.bbq-media{position:relative}
+.bbq-media img{border-radius:var(--r-lg);width:100%;aspect-ratio:5/4;object-fit:cover;
+  box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.award{position:absolute;bottom:-24px;left:-18px;background:var(--gold);color:var(--ink);
+  border-radius:var(--r);padding:16px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);max-width:230px;transform:rotate(-3deg)}
+.award b{font-family:var(--f-display);font-size:1.5rem;display:block;line-height:1;letter-spacing:.5px}
+.award span{font-size:.8rem;font-weight:600}
+.bbq h2{font-size:clamp(2.4rem,5.5vw,4.4rem);text-transform:uppercase;color:var(--white)}
+.bbq h2 em{font-family:var(--f-serif);color:var(--gold-soft);text-transform:none;font-style:italic;font-weight:600;font-size:.76em;display:inline-block}
+.bbq p{color:rgba(255,252,245,.88);margin:16px 0;font-size:1.05rem}
+.bbq .bbq-list{list-style:none;margin:20px 0 28px;display:grid;gap:12px}
+.bbq .bbq-list li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem;color:rgba(255,252,245,.9)}
+.bbq .bbq-list svg{width:20px;height:20px;fill:var(--gold-soft);flex-shrink:0;margin-top:3px}
+
+/* ============ 7. ATMOSPHERE ============ */
+.atmosphere{min-height:64vh;display:flex;align-items:center;background:var(--night);position:relative;overflow:hidden}
+.atmosphere img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.atmosphere::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg, rgba(13,10,7,.9) 0%, rgba(13,10,7,.55) 55%, rgba(13,10,7,.2) 100%)}
+.atmosphere .wrap{z-index:2;color:var(--paper);max-width:580px}
+.atmosphere h2{font-size:clamp(2.6rem,6vw,4.6rem);text-transform:uppercase;line-height:1}
+.atmosphere h2 em{font-family:var(--f-serif);color:var(--gold-soft);text-transform:none;font-style:italic;font-weight:600;font-size:.74em;display:block;margin-top:6px}
+.atmosphere p{margin:18px 0 28px;color:rgba(244,236,224,.9);font-size:1.05rem}
+
+/* ============ 8. REVIEWS ============ */
+.reviews{background:var(--paper-2)}
+.rating-hero{display:flex;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap;
+  background:var(--ink);color:var(--paper);border-radius:var(--r-lg);padding:30px 44px;
+  max-width:660px;margin:0 auto 56px;box-shadow:var(--shadow)}
+.rating-hero .big{font-family:var(--f-display);font-size:5rem;line-height:.82;color:var(--gold)}
+.rating-hero .rh-stars{color:var(--gold);font-size:1.5rem;letter-spacing:3px}
+.rating-hero .rh-meta{font-size:.92rem;color:rgba(244,236,224,.82);margin-top:5px}
+.rating-hero .rh-meta strong{color:var(--white)}
+.rh-divide{width:1px;align-self:stretch;background:rgba(244,236,224,.22)}
+
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.review-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+  padding:32px 30px;box-shadow:var(--shadow-sm);position:relative;transition:transform var(--t), box-shadow var(--t)}
+.review-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.quote-mark{font-family:var(--f-serif);font-size:5rem;color:var(--gold-soft);opacity:.6;line-height:.5;position:absolute;top:22px;right:22px}
+.review-card .stars{margin:0 0 14px}
+.review-card p{font-size:.95rem;color:var(--ink);position:relative;z-index:1}
+.reviewer{display:flex;align-items:center;gap:12px;margin-top:22px}
+.avatar{width:46px;height:46px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:var(--white);font-size:1rem;letter-spacing:.5px}
+.reviewer .who{line-height:1.3}
+.reviewer .who b{font-size:.95rem}
+.reviewer .who small{color:var(--ink-soft);font-size:.78rem;display:block}
+
+/* ============ 9. MENU ============ */
+.menu{background:var(--paper);overflow:hidden}
+/* cartoon food doodles — realistic, scattered, drifting */
+.menu-doodles{position:absolute;inset:0;z-index:0;pointer-events:none}
+.menu-doodles .doodle{position:absolute;opacity:.32;
+  filter:drop-shadow(0 6px 10px rgba(31,27,26,.12));
+  animation:doodle-float 9s ease-in-out infinite}
+.menu-doodles .d-fork{opacity:.3;animation-duration:7s}
+.menu-doodles .d-knife{opacity:.3;animation-duration:8s}
+.menu-doodles .d-steak{opacity:.3;animation-duration:11s}
+.menu-doodles .d-egg2{opacity:.34;animation-duration:10s}
+.menu-doodles .d-egg{--r:-12deg}
+.menu-doodles .d-fork{--r:10deg}
+.menu-doodles .d-knife{--r:-6deg}
+.menu-doodles .d-steak{--r:6deg}
+@keyframes doodle-float{
+  0%,100%{transform:translateY(0) rotate(var(--r,0deg))}
+  50%{transform:translateY(-14px) rotate(var(--r,0deg))}
+}
+@media(prefers-reduced-motion:reduce){.menu-doodles .doodle{animation:none}}
+.menu-layout{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start}
+.menu-side{position:sticky;top:calc(var(--nav-h) + 20px)}
+.menu-photo{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;margin-bottom:22px;border:1px solid var(--line)}
+.menu-photo img{width:100%;height:100%;object-fit:cover}
+.menu-tabs{display:flex;flex-direction:column;gap:10px}
+.tab{text-align:left;background:var(--white);border:1px solid var(--line);
+  font-family:var(--f-display);font-size:1.45rem;letter-spacing:1px;text-transform:uppercase;
+  color:var(--oxblood);padding:15px 22px;border-radius:var(--r);cursor:pointer;
+  transition:var(--t);display:flex;justify-content:space-between;align-items:center}
+.tab:hover{border-color:var(--oxblood)}
+.tab:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.tab.active{background:var(--oxblood);color:var(--paper);border-color:var(--oxblood)}
+.tab .arr{opacity:0;transition:var(--t)}
+.tab.active .arr{opacity:1}
+
+.menu-panels{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 36px 30px;box-shadow:var(--shadow-sm)}
+.panel{display:none;animation:fadeIn .4s ease}
+.panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.menu-row{display:flex;justify-content:space-between;gap:18px;align-items:baseline;
+  padding:18px 0;border-bottom:1px dashed var(--line)}
+.menu-row:last-child{border-bottom:0}
+.menu-row .info h4{font-size:1.06rem;font-family:var(--f-body);font-weight:700;color:var(--ink)}
+.menu-row .info p{font-size:.88rem;color:var(--ink-soft);margin-top:2px}
+.menu-row .dots{flex:1;border-bottom:2px dotted var(--line);align-self:flex-end;margin-bottom:6px;min-width:20px;max-width:80px}
+.menu-row .mp{font-family:var(--f-display);font-size:1.5rem;color:var(--teal);flex-shrink:0;font-variant-numeric:tabular-nums}
+.menu-note{font-size:.82rem;color:var(--ink-soft);font-style:italic;margin-bottom:14px;padding-bottom:14px;border-bottom:1px dashed var(--line)}
+.menu-foot{margin-top:14px;padding-top:24px;border-top:2px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.menu-foot p{font-size:.85rem;color:var(--ink-soft);max-width:440px}
+
+/* ============ 10. ABOUT ============ */
+.about{background:var(--teal-soft)}
+.about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.about-media{position:relative}
+.about-media img{border-radius:var(--r-lg);box-shadow:var(--shadow);width:100%;aspect-ratio:4/5;object-fit:cover}
+.since-badge{position:absolute;bottom:-26px;right:-18px;background:var(--neon);color:var(--white);
+  width:132px;height:132px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-lg);border:5px solid var(--paper);transform:rotate(-8deg)}
+.since-badge .s1{font-family:var(--f-serif);font-style:italic;font-size:1rem}
+.since-badge .s2{font-family:var(--f-display);font-size:2.7rem;line-height:.8}
+.about-copy h2{font-size:clamp(2.4rem,5vw,4rem);color:var(--ink);text-transform:uppercase;margin-bottom:6px}
+.about-copy .pull{font-family:var(--f-serif);font-style:italic;font-size:1.55rem;color:var(--oxblood);margin:18px 0;line-height:1.4}
+.about-copy p{color:var(--ink);margin-bottom:14px}
+.values{display:flex;flex-direction:column;gap:18px;margin-top:26px}
+.value{display:flex;gap:14px;align-items:flex-start}
+.value .ico{width:48px;height:48px;flex-shrink:0;border-radius:12px;background:var(--paper);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center}
+.value .ico svg{width:24px;height:24px;stroke:var(--oxblood);fill:none;stroke-width:2}
+.value b{display:block;font-size:1rem;color:var(--ink)}
+.value span{font-size:.9rem;color:var(--ink-soft)}
+
+/* ============ 11. VISIT ============ */
+.visit{background:var(--paper)}
+.visit-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:38px;align-items:stretch}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);overflow:hidden}
+.hours-card{padding:34px 32px;display:flex;flex-direction:column}
+.hours-card .hc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;flex-wrap:wrap;gap:10px}
+.hours-card h3{font-size:2.3rem;color:var(--oxblood);text-transform:uppercase}
+.live-badge{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:8px 16px;border-radius:var(--r-pill)}
+.live-badge.open{background:#dff5e8;color:#1c7a47}
+.live-badge.closed{background:#fbe2e6;color:var(--oxblood)}
+.hours-list{list-style:none;font-family:var(--f-sub)}
+.hours-list li{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:var(--r-sm);font-size:.92rem;font-variant-numeric:tabular-nums}
+.hours-list li .day{font-weight:600;letter-spacing:.01em}
+.hours-list li.today{background:var(--teal-soft);font-weight:700}
+.hours-list li.today .day::after{content:" ★ Today";color:var(--oxblood);font-size:.74rem;font-weight:600;letter-spacing:.04em}
+.hours-note{font-size:.86rem;color:var(--ink-soft);margin-top:16px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--paper-2);color:var(--oxblood);
+  font-size:.78rem;font-weight:600;padding:8px 15px;border-radius:var(--r-pill)}
+.chip svg{width:14px;height:14px;fill:var(--teal)}
+
+.map-card{display:flex;flex-direction:column}
+.map-card iframe{width:100%;border:0;flex:1;min-height:320px;display:block}
+.addr{padding:28px 30px}
+.addr h4{font-size:1.5rem;color:var(--oxblood);text-transform:uppercase;font-family:var(--f-display);letter-spacing:.5px}
+.addr p{font-size:.96rem;color:var(--ink);margin:6px 0}
+.addr .addr-btns{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.addr .btn{padding:13px 24px;font-size:.78rem}
+
+/* ============ 12. COMMUNITY CTA ============ */
+.community{background:var(--night);color:var(--paper);text-align:center;position:relative;overflow:hidden}
+.community::before{content:"";position:absolute;inset:0;opacity:.06;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.community h2{font-size:clamp(2.8rem,6.5vw,5.4rem);text-transform:uppercase}
+.community h2 em{font-family:var(--f-serif);color:var(--gold-soft);text-transform:none;font-style:italic;font-weight:600;font-size:.62em;display:inline-block}
+.community p{max-width:580px;margin:18px auto 32px;color:rgba(244,236,224,.88);font-size:1.06rem}
+.community .cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.socials{display:flex;gap:14px;justify-content:center;margin-bottom:36px}
+.soc{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(244,236,224,.1);border:1px solid rgba(244,236,224,.25);transition:var(--t)}
+.soc:hover{background:var(--neon);border-color:var(--neon);transform:translateY(-4px)}
+.soc svg{width:20px;height:20px;fill:var(--paper)}
+.perks{display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
+.perk{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:rgba(244,236,224,.9)}
+.perk svg{width:18px;height:18px;fill:var(--gold)}
+
+/* ============ 13. FOOTER ============ */
+.footer{background:var(--night-2);color:rgba(244,236,224,.78);padding:68px 0 0}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1.4fr;gap:48px}
+.foot-col h4{font-family:var(--f-display);font-size:1.3rem;letter-spacing:1px;color:var(--paper);text-transform:uppercase;margin-bottom:18px}
+.foot-brand .name{font-family:var(--f-display);font-size:2.1rem;color:var(--paper);letter-spacing:1.5px}
+.foot-brand .sub{font-family:var(--f-serif);font-style:italic;color:var(--gold-soft);font-size:.98rem;margin-bottom:16px}
+.foot-brand p{font-size:.9rem;max-width:330px;margin-bottom:18px}
+.foot-soc{display:flex;gap:12px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.foot-col ul a{font-size:.92rem;transition:var(--t)}
+.foot-col ul a:hover{color:var(--neon)}
+.foot-contact li{font-size:.92rem;margin-bottom:10px;display:flex;gap:9px;align-items:flex-start}
+.foot-contact svg{width:16px;height:16px;fill:var(--gold);flex-shrink:0;margin-top:3px}
+.foot-bottom{border-top:1px solid rgba(244,236,224,.12);margin-top:56px;padding:24px 0;text-align:center;font-size:.82rem;color:rgba(244,236,224,.55)}
+.foot-bottom a{color:var(--gold)}
+
+/* ============ FLOATING + SCROLLTOP ============ */
+.floaters{position:fixed;right:18px;bottom:18px;z-index:45;display:flex;flex-direction:column;gap:12px;
+  opacity:0;visibility:hidden;transform:translateY(16px);transition:var(--t)}
+.floaters.show{opacity:1;visibility:visible;transform:none}
+.float-btn{display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:var(--r-pill);
+  font-weight:700;font-size:.84rem;text-transform:uppercase;letter-spacing:.06em;box-shadow:var(--shadow);transition:var(--t)}
+.float-btn svg{width:17px;height:17px;fill:currentColor}
+.float-call{background:var(--oxblood);color:var(--paper)}
+.float-order{background:var(--neon);color:var(--white)}
+.float-btn:hover{transform:translateY(-3px)}
+.scrolltop{position:fixed;left:18px;bottom:18px;z-index:45;width:50px;height:50px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--ink);color:var(--paper);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transform:translateY(16px);transition:var(--t)}
+.scrolltop.show{opacity:1;visibility:visible;transform:none}
+.scrolltop:hover{background:var(--oxblood);transform:translateY(-3px)}
+.scrolltop svg{width:20px;height:20px;fill:currentColor}
+
+/* ============ HERO CENTERED ============ */
+.hero-wrap{max-width:1140px}
+.hero-text{max-width:680px}
+.hero-text .status-pill{margin-bottom:22px}
+
+/* hero title */
+.hero-title{
+  font-family:var(--f-display);
+  font-size:clamp(3rem,8.5vw,6.6rem);
+  text-transform:uppercase;letter-spacing:.5px;
+  color:var(--white);
+  text-shadow:0 0 28px rgba(193,43,30,.4), 0 2px 0 rgba(140,27,21,.5), 0 10px 40px rgba(0,0,0,.6);
+  line-height:1.02;
+  margin:0 0 22px;
+}
+
+.about-caption{
+  font-family:var(--f-serif);font-style:italic;font-size:1.2rem;
+  color:var(--oxblood);margin:48px 0 0;line-height:1.5;
+  font-weight:500;text-align:center
+}
+
+/* ============ DECOR ============ */
+.decor{position:absolute;z-index:0;pointer-events:none;opacity:.1}
+.decor.star{opacity:.16}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity var(--t-slow), transform var(--t-slow)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:980px){
+  .menu-layout{grid-template-columns:1fr}
+  .menu-side{position:static}
+  .menu-tabs{flex-direction:row;flex-wrap:wrap}
+  .tab{flex:1;min-width:150px;justify-content:center}
+  .visit-grid,.about-grid,.bbq-grid{grid-template-columns:1fr;gap:54px}
+  .about-media,.bbq-media{max-width:460px;margin:0 auto}
+  .about-media{margin-bottom:40px}
+  .award{left:0}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:36px}
+}
+@media(max-width:800px){
+  .nav-links,.nav-cta .nav-call,.nav-cta .btn{display:none}
+  .burger{display:flex}
+  .fav-grid{grid-template-columns:1fr}
+  .fav-card.feature{grid-row:auto}
+  .reviews-grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr;margin-top:40px}
+  .stat:nth-child(2)::after{display:none}
+  .hero-text{max-width:100%}
+  .hero-btns{gap:12px}
+  .section-head{margin-bottom:40px}
+  .menu-photo{aspect-ratio:16/9}
+}
+@media(max-width:560px){
+  .reviews-grid,.foot-grid{grid-template-columns:1fr}
+  .rating-hero{flex-direction:column;gap:14px;padding:22px 20px}
+  .rh-divide{display:none}
+  .since-badge{width:106px;height:106px;right:0}
+  .marquee-track span{font-size:1.25rem}
+  .floaters .float-btn span{display:none}
+  .float-btn{padding:15px}
+  .stat::after{display:none!important}
+  .announce{font-size:.7rem;padding:8px 10px}
+  .hero{min-height:100dvh}
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn{justify-content:center}
+  .stats{margin-top:32px}
+  .menu-panels{padding:14px 18px 24px}
+  .fav-body h3{font-size:1.5rem}
+  .fav-card.feature .fav-body h3{font-size:1.85rem}
+  .price{font-size:1.4rem}
+  .hours-card{padding:22px 18px}
+  .addr{padding:18px 18px}
+  .community .cta-btns{flex-direction:column;align-items:stretch;max-width:320px;margin-left:auto;margin-right:auto}
+  .community .cta-btns .btn{justify-content:center}
+  .section-head{margin-bottom:32px}
+}
+@media(max-width:420px){
+  .wrap{padding:0 16px}
+  .stat{padding:14px 6px}
+  .stat .num{font-size:clamp(1.8rem,7vw,2.4rem)}
+  .section-head h2{font-size:clamp(1.8rem,8vw,2.6rem)}
+  .review-card{padding:22px 18px}
+  .fav-body{padding:18px 18px 22px}
+  .about-grid,.bbq-grid,.visit-grid{gap:36px}
+  .hours-card{padding:18px 14px}
+  .addr{padding:14px 14px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. ANNOUNCEMENT BAR ============ -->
+<div class="announce" id="announce">
+  Family owned in Everett since 1953 · Wayne's smoked meats on the menu · <a href="tel:+14252523277">(425) 252-3277</a>
+</div>
+
+<!-- ============ 2. NAVBAR ============ -->
+<nav class="nav" id="nav">
+  <a href="#home" class="brand" aria-label="Totem Family Diner home">
+    <img class="mark" src="images/totem-logo-mark.png" alt="Totem Family Diner logo" />
+    <span class="brand-txt">
+      <span class="name">TOTEM</span>
+      <span class="sub">Family Diner</span>
+    </span>
+  </a>
+
+  <div class="nav-links">
+    <a href="#favorites">Favorites</a>
+    <a href="#bbq">BBQ</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">Our Story</a>
+    <a href="#visit">Visit</a>
+  </div>
+
+  <div class="nav-cta">
+    <a href="tel:+14252523277" class="nav-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+      (425) 252-3277
+    </a>
+    <a href="#menu" class="btn btn-primary">See the Menu</a>
+  </div>
+
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- mobile overlay -->
+<div class="overlay" id="overlay">
+  <button class="overlay-close" id="overlayClose" aria-label="Close menu">&times;</button>
+  <a href="#favorites">Favorites</a>
+  <a href="#bbq">BBQ</a>
+  <a href="#menu">Menu</a>
+  <a href="#about">Our Story</a>
+  <a href="#visit">Visit</a>
+  <a href="tel:+14252523277" class="btn btn-primary">Call (425) 252-3277</a>
+</div>
+
+<!-- ============ 3. HERO ============ -->
+<header class="hero" id="home">
+  <img class="hero-img" src="images/totem_53.gif" alt="Totem Family Diner storefront with the neon totem sign at sunset in Everett, Washington" />
+  <div class="wrap hero-wrap">
+    <div class="hero-text">
+      <span class="status-pill">
+        <span class="dot" id="heroDot"></span>
+        <span id="heroStatus">Everett, WA</span>
+      </span>
+      <h1 class="hero-title">Totem Family Diner</h1>
+      <p class="hero-sub">Thick-cut bacon, fresh-baked pies, and pit master Wayne's smoked meats. Come as you are, leave full. That's been the deal since 1953.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-neon">See the Menu</a>
+        <a href="#visit" class="btn btn-ghost">Get Directions</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="num">4.6<span class="star">★</span></div><div class="lbl">Google Rating</div></div>
+      <div class="stat"><div class="num">3,395</div><div class="lbl">Reviews &amp; Counting</div></div>
+      <div class="stat"><div class="num">1953</div><div class="lbl">Serving Since</div></div>
+      <div class="stat"><div class="num">7</div><div class="lbl">Days a Week</div></div>
+    </div>
+  </div>
+
+</header>
+
+<!-- ============ 4. MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Breakfast All Day</span><span>House-Smoked BBQ</span><span>Famous Thick-Cut Bacon</span><span>Fresh-Baked Pies Daily</span><span>4410 Rucker Ave, Everett WA</span><span>Family Owned Since 1953</span>
+    <span>Breakfast All Day</span><span>House-Smoked BBQ</span><span>Famous Thick-Cut Bacon</span><span>Fresh-Baked Pies Daily</span><span>4410 Rucker Ave, Everett WA</span><span>Family Owned Since 1953</span>
+  </div>
+</div>
+
+<!-- ============ 5. FAVORITES ============ -->
+<section class="favorites pad paper-grain" id="favorites">
+  <svg class="decor star" style="top:8%;left:3%;width:64px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7L12 16l-6.3 4.3 2.3-7-6-4.4h7.6z" fill="#e0a82e"/></svg>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker" >Straight off the griddle</span>
+      <h2>Customer <em>Favorites</em></h2>
+      <p>The plates people drive across town for, then come back the next day. Built big, because you're hungry.</p>
+    </div>
+
+    <div class="fav-grid">
+      <article class="fav-card feature reveal">
+        <div class="fav-media">
+          <img loading="lazy" src="images/eggshash.jpg" alt="Stuffed French toast with blueberries and bananas, served with hash browns" />
+          <span class="badge">Most Loved</span>
+        </div>
+        <div class="fav-body">
+          <div class="row"><h3>Stuffed French Toast</h3><span class="price">$14.95</span></div>
+          <p>Thick Texas toast filled with sweet cream cheese, finished with Cornish cream and fresh berries. The one reviewers keep raving about, with a side of the best bacon.</p>
+          <div class="stars">★★★★★ <small>Reviewer pick</small></div>
+        </div>
+      </article>
+
+      <article class="fav-card reveal d1">
+        <div class="fav-media">
+          <img loading="lazy" src="images/club sandwich.jpg" alt="Triple-decker club sandwich with turkey, bacon, lettuce, and tomato, served with fries" />
+          <span class="badge">Signature</span>
+        </div>
+        <div class="fav-body">
+          <div class="row"><h3>Club Sandwich</h3><span class="price">$16.95</span></div>
+          <p>Triple-decker classic with roast turkey, crispy bacon, lettuce, tomato, and mayo on toasted white bread. Served with fries.</p>
+          <div class="stars">★★★★★ <small>House favorite</small></div>
+        </div>
+      </article>
+
+      <article class="fav-card reveal d2">
+        <div class="fav-media">
+          <img loading="lazy" src="images/roll.jpg" alt="Giant house-baked cinnamon roll with icing" />
+          <span class="badge">Bring One Home</span>
+        </div>
+        <div class="fav-body">
+          <div class="row"><h3>Giant Cinnamon Bun</h3><span class="price">$7.95</span></div>
+          <p>An enormous house-baked roll under a blanket of icing. Easily shareable, rarely shared.</p>
+          <div class="stars">★★★★★ <small>To-go favorite</small></div>
+        </div>
+      </article>
+
+      <article class="fav-card reveal d3">
+        <div class="fav-media">
+          <img loading="lazy" src="images/cream.jpg" alt="Golden waffle topped with Nutella and Cornish cream" />
+          <span class="badge">Sweet Treat</span>
+        </div>
+        <div class="fav-body">
+          <div class="row"><h3>Chocolate Waffle</h3><span class="price">$15.95</span></div>
+          <p>Golden waffle served with Nutella and Cornish cream. Decadent and shareable, rarely shared.</p>
+          <div class="stars">★★★★★ <small>Breakfast dessert</small></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. BBQ FEATURE ============ -->
+<section class="bbq pad" id="bbq">
+  <div class="wrap">
+    <div class="bbq-grid">
+      <div class="bbq-media reveal">
+        <!-- REPLACE with images/bbq.jpg (your smoked meats / brisket plate) -->
+        <img loading="lazy" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=80" alt="House-smoked BBQ brisket and ribs from Totem Family Diner's pit master" />
+        <div class="award"><b>Memphis in May</b><span>World BBQ Competition invitee</span></div>
+      </div>
+      <div class="bbq-copy reveal d1">
+        <span class="kicker light" >From the pit</span>
+        <h2>Wayne's <em>famous smoke</em></h2>
+        <p>When Steve and Alicia took over in 2011, they brought dad with them. Wayne has been smoking meats for over twenty years, picked up local competition wins, and got an invite to the Memphis in May World BBQ. The pit came with the family.</p>
+        <ul class="bbq-list">
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg> Low and slow, over real wood, every time</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg> Dinner served Wednesday through Saturday</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg> BBQ catering, sides, and baked goods for any size</li>
+        </ul>
+        <a href="tel:+14252523277" class="btn btn-neon">Ask About Catering</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ATMOSPHERE ============ -->
+<section class="atmosphere">
+  <img loading="lazy" src="images/inside.jpg" alt="Cozy classic diner interior with booths and counter seating at Totem Family Diner" />
+  <div class="wrap reveal">
+    <h2>Old-school booths,<em>bottomless coffee</em></h2>
+    <p>The kind of place where the server knows your order before you sit down. Vinyl booths, a counter with good stools, and seventy years of Everett stories baked into the walls.</p>
+    <a href="#visit" class="btn btn-neon">Plan Your Visit</a>
+  </div>
+</section>
+
+<!-- ============ 8. REVIEWS ============ -->
+<section class="reviews pad" id="reviews">
+  <svg class="decor star" style="top:9%;right:5%;width:54px" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7L12 16l-6.3 4.3 2.3-7-6-4.4h7.6z" fill="#e0a82e"/></svg>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker" >3,395 reviews and climbing</span>
+      <h2>What Everett <em>Says</em></h2>
+    </div>
+
+    <div class="rating-hero reveal">
+      <div class="big">4.6</div>
+      <div>
+        <div class="rh-stars">★★★★★</div>
+        <div class="rh-meta"><strong>3,395</strong> reviews on Google</div>
+      </div>
+      <div class="rh-divide"></div>
+      <div>
+        <div class="rh-meta" style="font-size:.95rem">$10&ndash;20 per person</div>
+        <div class="rh-meta">Dine-in &middot; Takeout &middot; Catering</div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <article class="review-card reveal">
+        <span class="quote-mark">&rdquo;</span>
+        <div class="stars">★★★★★</div>
+        <p>Dined here with a group of coworkers and it was fantastic from start to finish. The moment we walked in we were greeted warmly. A great spot in Everett.</p>
+        <div class="reviewer">
+          <div class="avatar" style="background:#b0231c">MP</div>
+          <div class="who"><b>Minsu Park</b><small>Local Guide &middot; 187 reviews</small></div>
+        </div>
+      </article>
+
+      <article class="review-card reveal d1">
+        <span class="quote-mark">&rdquo;</span>
+        <div class="stars">★★★★☆</div>
+        <p>Fun little old-school diner. The Cornish cream was the most unique and delicious thing on the French toast. Worth a stop if you love a classic diner feel.</p>
+        <div class="reviewer">
+          <div class="avatar" style="background:#3b7a78">TB</div>
+          <div class="who"><b>Tyler Brown</b><small>Local Guide &middot; 257 reviews</small></div>
+        </div>
+      </article>
+
+      <article class="review-card reveal d2">
+        <span class="quote-mark">&rdquo;</span>
+        <div class="stars">★★★★★</div>
+        <p>I'm from out of state and asked Google for a local diner. This was a top pick. Absolutely loved it, came back the next day, and might come back for dinner before I fly home. Huge portions, friendly staff. A must-go.</p>
+        <div class="reviewer">
+          <div class="avatar" style="background:#e0a82e">RM</div>
+          <div class="who"><b>Ricky Morris</b><small>Local Guide &middot; 13 reviews</small></div>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <span class="quote-mark">&rdquo;</span>
+        <div class="stars">★★★★★</div>
+        <p>Absolutely loved this spot for breakfast. So many choices it was hard to pick, but the stuffed French toast with a side of eggs and the best bacon won. We grabbed an enormous cinnamon bun to go.</p>
+        <div class="reviewer">
+          <div class="avatar" style="background:#5a131d">TE</div>
+          <div class="who"><b>Tara Elizabeth</b><small>Local Guide &middot; 712 reviews</small></div>
+        </div>
+      </article>
+
+      <article class="review-card reveal d1">
+        <span class="quote-mark">&rdquo;</span>
+        <div class="stars">★★★★★</div>
+        <p>Found this little gem while on military duty in Everett and wow. Everything about this place is amazing. The best breakfast I've ever had, and the bacon is super thick and smoky.</p>
+        <div class="reviewer">
+          <div class="avatar" style="background:#b0231c">BB</div>
+          <div class="who"><b>Bryan Boad</b><small>Local Guide &middot; 19 reviews</small></div>
+        </div>
+      </article>
+
+      <article class="review-card reveal d2">
+        <span class="quote-mark">&rdquo;</span>
+        <div class="stars">★★★★★</div>
+        <p>A real Everett institution. Generous portions, fair prices, and that classic diner feel you can't fake. We've been coming for years and it never misses.</p>
+        <div class="reviewer">
+          <div class="avatar" style="background:#16110d">DW</div>
+          <div class="who"><b>Dana W.</b><small>Local Guide &middot; 64 reviews</small></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. MENU ============ -->
+<section class="menu pad" id="menu">
+  <!-- cartoon food doodles scattered across the menu -->
+  <div class="menu-doodles" aria-hidden="true">
+    <!-- sunny-side-up egg -->
+    <svg class="doodle d-egg" style="bottom:11%;right:3%;width:104px" viewBox="0 0 120 100">
+      <path d="M40 12C20 14 6 32 10 54c3 18 4 34 26 36 14 1 18-8 30-8s20 12 34 4c16-9 12-34 4-46-9-13-28-10-40-18-8-5-14-11-24-10z" fill="#fffdf8" stroke="#e7dcc6" stroke-width="3"/>
+      <circle cx="58" cy="50" r="20" fill="#f0a91f"/>
+      <circle cx="51" cy="43" r="6" fill="#f7c95a"/>
+    </svg>
+    <!-- knife — outlined cutlery look -->
+    <svg class="doodle d-knife" style="top:16%;right:9%;width:40px" viewBox="0 0 50 130">
+      <path d="M25 6c11 9 14 30 14 50 0 8-5 12-14 12s-14-4-14-12c0-20 3-41 14-50z
+               M18 70c0 30 1 44 7 50 6-6 7-20 7-50z" fill="#e8eaec" stroke="#3a1f33" stroke-width="5" stroke-linejoin="round"/>
+    </svg>
+    <!-- fork — outlined cutlery look -->
+    <svg class="doodle d-fork" style="top:18%;right:3%;width:40px" viewBox="0 0 50 130">
+      <path d="M11 8v26M19 8v26M25 8v26M31 8v26M39 8v26
+               M11 34c0 9 4 14 10 16M39 34c0 9-4 14-10 16M25 50v6
+               M18 56c0 26 1 50 7 66 6-16 7-40 7-66z" fill="#e8eaec" stroke="#3a1f33" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <!-- grilled ribeye steak -->
+    <svg class="doodle d-steak" style="top:5%;left:3%;width:140px" viewBox="0 0 150 120">
+      <path d="M30 40C36 18 70 10 98 18c30 9 48 28 42 50-5 19-30 34-62 36-26 2-50-6-58-24-6-13-2-30 10-40z" fill="#5e2c1c"/>
+      <path d="M36 42C44 24 72 18 96 25c26 8 41 24 36 42-4 16-27 28-55 30-22 1-43-6-50-21-5-12-1-27 9-34z" fill="#9c4a2e"/>
+      <path d="M44 42C54 30 74 27 92 33c21 7 33 20 29 34-4 13-23 22-46 23-19 1-36-6-41-18-4-11 0-23 10-30z" fill="#b9613a"/>
+      <g stroke="#3d1c12" stroke-width="6" stroke-linecap="round" opacity=".85" fill="none">
+        <path d="M52 34C44 48 46 66 58 78"/>
+        <path d="M72 30C64 46 66 68 80 80"/>
+        <path d="M94 32C86 48 88 68 102 78"/>
+        <path d="M114 40C108 52 110 68 120 76"/>
+      </g>
+      <path d="M48 44c10-7 24-8 34-3" fill="none" stroke="#d98a5c" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+    </svg>
+    <!-- second egg -->
+    <svg class="doodle d-egg2" style="bottom:7%;left:6%;width:80px" viewBox="0 0 120 100">
+      <path d="M40 12C20 14 6 32 10 54c3 18 4 34 26 36 14 1 18-8 30-8s20 12 34 4c16-9 12-34 4-46-9-13-28-10-40-18-8-5-14-11-24-10z" fill="#fffdf8" stroke="#e7dcc6" stroke-width="3"/>
+      <circle cx="58" cy="50" r="20" fill="#f0a91f"/>
+      <circle cx="51" cy="43" r="6" fill="#f7c95a"/>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker" >$10&ndash;20 per person</span>
+      <h2>The <em>Menu</em></h2>
+      <p>Diner-size portions, made to order. A taste of what's on the board.</p>
+    </div>
+
+    <div class="menu-layout">
+      <aside class="menu-side reveal">
+        <div class="menu-photo">
+          <img loading="lazy" src="images/club sandwich.jpg" alt="Classic triple-decker club sandwich with turkey, bacon, lettuce, and tomato, served with french fries" />
+        </div>
+        <div class="menu-tabs" role="tablist">
+          <button class="tab active" data-panel="breakfast" role="tab">Breakfast <span class="arr">&rarr;</span></button>
+          <button class="tab" data-panel="omelets" role="tab">Omelets <span class="arr">&rarr;</span></button>
+          <button class="tab" data-panel="burgers" role="tab">Burgers <span class="arr">&rarr;</span></button>
+          <button class="tab" data-panel="melts" role="tab">Melts &amp; Dips <span class="arr">&rarr;</span></button>
+          <button class="tab" data-panel="seafood" role="tab">Seafood <span class="arr">&rarr;</span></button>
+          <button class="tab" data-panel="waffles" role="tab">Pancakes &amp; Waffles <span class="arr">&rarr;</span></button>
+        </div>
+      </aside>
+
+      <div class="menu-panels reveal d1">
+
+        <div class="panel active" id="breakfast">
+          <div class="menu-row"><div class="info"><h4>Two Pancakes with Meat</h4><p>Ham, bacon or sausage, any style</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Two Eggs with Meat</h4><p>Ham, bacon or sausage, hashbrowns or O'Briens, toast &amp; jam</p></div><span class="dots"></span><span class="mp">13.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Chicken Fried Steak &amp; Eggs</h4><p>2 eggs, hashbrowns or O'Briens, country gravy, toast &amp; jam</p></div><span class="dots"></span><span class="mp">19.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Corned Beef Hash &amp; Eggs</h4><p>2 eggs any style, hashbrowns or O'Briens, toast &amp; jam</p></div><span class="dots"></span><span class="mp">18.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Farmers Mix</h4><p>O'Briens, ham, bacon &amp; links, 2 eggs, Tillamook cheddar &amp; country gravy</p></div><span class="dots"></span><span class="mp">18.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Monster Breakfast</h4><p>Biscuits &amp; gravy, 2 eggs, ham, bacon or sausage, hashbrowns or O'Briens</p></div><span class="dots"></span><span class="mp">19.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Eggs Benedict</h4><p>English muffin, ham, 2 poached eggs, hollandaise, hashbrowns or O'Briens</p></div><span class="dots"></span><span class="mp">18.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Biscuit Barge</h4><p>Homemade biscuit, savory sausage patty, country gravy, 2 eggs, hashbrowns</p></div><span class="dots"></span><span class="mp">18.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Biscuits &amp; Gravy</h4><p>Mom's secret recipe</p></div><span class="dots"></span><span class="mp">8.95</span></div>
+          <div class="menu-row"><div class="info"><h4>3/4 lb Hamburger Steak</h4><p>2 eggs, hashbrowns or O'Briens, country gravy, toast &amp; jam</p></div><span class="dots"></span><span class="mp">19.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Pigs in a Blanket</h4><p>Three juicy links wrapped in fluffy cakes</p></div><span class="dots"></span><span class="mp">13.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Two Eggs &amp; Toast</h4><p>Any style, toast &amp; jam</p></div><span class="dots"></span><span class="mp">9.95</span></div>
+        </div>
+
+        <div class="panel" id="omelets">
+          <p class="menu-note">All omelets made with 4 large eggs, served with hashbrowns or O'Brien potatoes, toast &amp; jam 1.95</p>
+          <div class="menu-row"><div class="info"><h4>Cheese Omelet</h4><p>Choice of two: American, Swiss, cheddar, pepper jack, Gouda, provolone</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Veggie Omelet</h4><p>Sautéed mushrooms, onions, peppers, tomatoes &amp; cheese</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Taco Omelet</h4><p>Zesty taco meat, cheddar, onions, tomatoes &amp; olives</p></div><span class="dots"></span><span class="mp">17.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Designer Omelet</h4><p>Build your own — add 2.25 per item. Bacon, ham, sausage, kielbasa, chorizo, cheeses, veggies &amp; more</p></div><span class="dots"></span><span class="mp">12.95</span></div>
+          <p class="menu-note" style="margin-top:14px">Egg whites or egg beaters available on request &mdash; add 1.95. Substitute any portion breakfast meats with our delicious 6oz smoked pit ham for 1.00.</p>
+        </div>
+
+        <div class="panel" id="burgers">
+          <p class="menu-note">Served with French fries or salad. Substitute hashbrowns or O'Briens add 1.00 &middot; Add cheese 1.50 &middot; Add bacon 2.00</p>
+          <div class="menu-row"><div class="info"><h4>Totem Burger Deluxe</h4><p>1/2 lb Angus beef, mayo, lettuce, onions, tomatoes, pickles &amp; sauce</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Bacon Burger Deluxe</h4><p>Topped with our famous apple smoked bacon</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Chief Burger Deluxe</h4><p>Our double decker! Two 1/2 lb beef patties, mayo, lettuce, onions, tomatoes, pickles &amp; Totem sauce</p></div><span class="dots"></span><span class="mp">17.95</span></div>
+          <div class="menu-row"><div class="info"><h4>BBQ Bacon Cheese Burger</h4><p>1/2 lb bacon burger with BBQ sauce and Swiss</p></div><span class="dots"></span><span class="mp">16.45</span></div>
+          <div class="menu-row"><div class="info"><h4>British Burger</h4><p>1/2 lb Angus beef, bacon, mushrooms, sour cream &amp; Swiss</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Parmesan Burger</h4><p>Sautéed onions, mushrooms and Swiss on grilled sourdough</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Chiliburger</h4><p>Smothered in chili, served open-faced</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Chicken Delight</h4><p>Grilled chicken breast, mayo, lettuce, onions, tomatoes &amp; pickles</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Vegetarian Burger</h4><p>Mayo, lettuce, onions, tomatoes, pickles &amp; Totem sauce</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Junior Burger</h4><p>1/4 lb Angus beef, lettuce, tomato, onions, pickles &amp; sauce, sesame bun, fries &middot; Double patty +2.50</p></div><span class="dots"></span><span class="mp">12.95</span></div>
+        </div>
+
+        <div class="panel" id="melts">
+          <p class="menu-note">Melts served with Swiss cheese and fries or salad. Substitute hashbrowns or O'Briens add 1.00</p>
+          <div class="menu-row"><div class="info"><h4>Patty Melt</h4><p>1/2 lb Angus beef, creamy Swiss, grilled onions on rye</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Tuna Melt</h4><p>Tuna salad and creamy Swiss on sourdough</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Turkey Bacon Melt</h4><p>Roast turkey, smoked bacon, tomato and creamy Swiss on grilled sourdough</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Grilled Cheese</h4><p>Crispy and gooey, plain and simple, fries or salad</p></div><span class="dots"></span><span class="mp">10.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Grilled Ham &amp; Cheese</h4><p>Grilled cheese stuffed with juicy ham &middot; Add bacon 2.00</p></div><span class="dots"></span><span class="mp">12.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Reuben</h4><p>Corned beef, sauerkraut, creamy Swiss, 1000 Island on grilled rye</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>French Dip</h4><p>1/2 lb tender beef piled high on a grilled French roll, au jus</p></div><span class="dots"></span><span class="mp">17.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Burger Dip</h4><p>3/4 lb Angus beef on a grilled hot French roll, au jus or BBQ sauce</p></div><span class="dots"></span><span class="mp">17.95</span></div>
+        </div>
+
+        <div class="panel" id="seafood">
+          <p class="menu-note">Served with soup or salad &amp; choice of French fries</p>
+          <div class="menu-row"><div class="info"><h4>Shrimp or Clam Strips</h4><p>1/2 pound of popcorn shrimp or clam strips</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Captain's Plate</h4><p>A feast of golden cod, scallops, shrimp &amp; clam strips</p></div><span class="dots"></span><span class="mp">21.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Fish &amp; Chips</h4><p>Alaskan cod hand-plunged in batter, fried golden brown</p></div><span class="dots"></span><span class="mp">16.95</span></div>
+        </div>
+
+        <div class="panel" id="waffles">
+          <div class="menu-row"><div class="info"><h4>Golden Brown Waffle</h4><p>Our special melted recipe</p></div><span class="dots"></span><span class="mp">11.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Meat Waffle</h4><p>Infused with ham, bacon or sausage</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Fruit Waffle</h4><p>Blackberry, blueberry or strawberry, Totem Cornish or whipped cream</p></div><span class="dots"></span><span class="mp">15.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Chocolate Waffle</h4><p>Served with Nutella and Cornish cream</p></div><span class="dots"></span><span class="mp">15.95</span></div>
+          <div class="menu-row"><div class="info"><h4>European French Toast</h4><p>Vanilla, cinnamon &amp; nutmeg, topped with almonds</p></div><span class="dots"></span><span class="mp">13.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Fruit French Toast</h4><p>Blackberry, blueberry or strawberry with Cornish cream</p></div><span class="dots"></span><span class="mp">15.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Chocolate French Toast</h4><p>Nutella and your choice of Totem Cornish or cream</p></div><span class="dots"></span><span class="mp">15.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Full Stack</h4><p>Three fluffy buttermilk pancakes</p></div><span class="dots"></span><span class="mp">12.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Short Stack</h4><p>Two piping hot cakes</p></div><span class="dots"></span><span class="mp">10.95</span></div>
+          <div class="menu-row"><div class="info"><h4>Fruit Pancake</h4><p>One golden cake, blackberry, blueberry or strawberry, Cornish or whipped cream</p></div><span class="dots"></span><span class="mp">14.95</span></div>
+        </div>
+
+        <div class="menu-foot">
+          <p>Split orders add 1.00 &middot; To-go orders add 1.00 &middot; Active Duty Military &amp; Seniors 65+ receive 10% off &middot; Always ask about today's pies &mdash; they go fast.</p>
+          <a href="tel:+14252523277" class="btn btn-outline">Call to Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. ABOUT ============ -->
+<section class="about pad paper-grain" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <img loading="lazy" src="images/totem pole1.jpg" alt="Carved totem pole at Totem Family Diner" />
+        <div class="since-badge"><span class="s1">Since</span><span class="s2">'53</span></div>
+      </div>
+      <div class="about-copy reveal d1">
+        <span class="kicker" >Our Story</span>
+        <h2>Seventy Years on Rucker Ave</h2>
+        <p class="pull">"That's not a tagline. That's just Tuesday around here."</p>
+        <p>Totem opened in 1953 when Rucker Avenue was part of old Highway 99 and a hot plate and a friendly face was all anyone needed. The neon totem sign has glowed ever since, inspired by a carved story pole that's stood on this block since the 1920s.</p>
+        <p>In 2011, Steve and Alicia took the reins from longtime owners Bliss and Joyce. They kept every recipe Everett grew up on and brought dad Wayne's smoked meats along for the ride. The chicken fried steak is still hand-breaded. The pies still come out of our oven. A lot has changed on Rucker Ave. This booth hasn't.</p>
+
+        <div class="values">
+          <div class="value">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 5a5.5 5.5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z"/></svg></span>
+            <div><b>Made from scratch, every morning</b><span>Hand-breaded, baked in-house, smoked over real wood. No bags, no shortcuts.</span></div>
+          </div>
+          <div class="value">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9"/></svg></span>
+            <div><b>Family owned, genuinely</b><span>Steve, Alicia, and Wayne — not a franchise, not a chain. The same family every day.</span></div>
+          </div>
+          <div class="value">
+            <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7L12 16l-6.3 4.3 2.3-7-6-4.4h7.6z"/></svg></span>
+            <div><b>Portions that earn the 4.6 stars</b><span>3,395 people left full. Most came back.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="about-caption reveal">We know you've seen our flashing lights every morning. Come in and visit.</p>
+  </div>
+</section>
+
+<!-- ============ 11. VISIT ============ -->
+<section class="visit pad" id="visit">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker" >Come on down</span>
+      <h2>Visit <em>Us</em></h2>
+      <p>Right on Rucker Ave. Park out front, walk in, sit anywhere. That's really it.</p>
+    </div>
+
+    <div class="visit-grid">
+      <div class="card hours-card reveal">
+        <div class="hc-top">
+          <h3>Hours</h3>
+          <span class="live-badge" id="liveBadge">Checking&hellip;</span>
+        </div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="day">Monday</span><span>7:00 AM &ndash; 2:00 PM</span></li>
+          <li data-day="2"><span class="day">Tuesday</span><span>7:00 AM &ndash; 2:00 PM</span></li>
+          <li data-day="3"><span class="day">Wednesday</span><span>7:00 AM &ndash; 2:00 PM</span></li>
+          <li data-day="4"><span class="day">Thursday</span><span>7:00 AM &ndash; 2:00 PM</span></li>
+          <li data-day="5"><span class="day">Friday</span><span>7:00 AM &ndash; 2:00 PM</span></li>
+          <li data-day="6"><span class="day">Saturday</span><span>7:00 AM &ndash; 3:00 PM</span></li>
+          <li data-day="0"><span class="day">Sunday</span><span>7:00 AM &ndash; 3:00 PM</span></li>
+        </ul>
+        <p class="hours-note" id="hoursNote"></p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M5 12h14v2H5zm0-4h14v2H5zm0 8h14v2H5z"/></svg>Dine-In</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M3 7h18l-2 13H5z"/></svg>Takeout</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M5 11l1.5-4.5h11L19 11v8h-2v-2H7v2H5zm2.5-1h9L15 7H9z"/></svg>Free Parking</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 015 5c0 3-5 7-5 7S7 10 7 7a5 5 0 015-5z"/></svg>BBQ Catering</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M4 19h16v2H4zm2-7h12v5H6zm6-9l5 6H7z"/></svg>Breakfast All Day</span>
+        </div>
+      </div>
+
+      <div class="card map-card reveal d1">
+        <iframe
+          title="Map to Totem Family Diner, 4410 Rucker Ave, Everett, WA"
+          src="https://www.google.com/maps?q=4410+Rucker+Ave,+Everett,+WA+98203&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="addr">
+          <h4>Totem Family Diner</h4>
+          <p>4410 Rucker Ave<br>Everett, WA 98203</p>
+          <p><a href="tel:+14252523277">(425) 252-3277</a></p>
+          <div class="addr-btns">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=4410+Rucker+Ave,+Everett,+WA+98203" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-outline" href="tel:+14252523277">Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. COMMUNITY CTA ============ -->
+<section class="community pad">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker light" >See you soon</span>
+      <h2>Pull up a <em>booth</em></h2>
+      <p>First visit or your thousandth cup of coffee, there's always a seat. No reservations, no dress code, no fuss. Just come hungry and we'll take care of the rest.</p>
+      <div class="cta-btns">
+        <a class="btn btn-neon" href="https://www.google.com/maps/dir/?api=1&destination=4410+Rucker+Ave,+Everett,+WA+98203" target="_blank" rel="noopener">Get Directions</a>
+        <a class="btn btn-ghost" href="tel:+14252523277">Call (425) 252-3277</a>
+      </div>
+
+      <div class="socials">
+        <a class="soc" href="https://www.facebook.com/totemdiner/" target="_blank" rel="noopener" aria-label="Totem Family Diner on Facebook"><svg viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg></a>
+        <a class="soc" href="https://www.yelp.com/biz/totem-family-dining-everett?ylpcid=8c7351dabfd84ca692c1edb90b2c9a5c0061cc53" target="_blank" rel="noopener" aria-label="Totem Family Diner on Yelp"><svg viewBox="0 0 24 24"><path d="m7.6885 15.1415-3.6715.8483c-.3769.0871-.755.183-1.1452.155-.2611-.0188-.5122-.0414-.7606-.213a1.179 1.179 0 0 1-.331-.3594c-.3486-.5519-.3656-1.3661-.3697-2.0004a6.2874 6.2874 0 0 1 .3314-2.0642 1.857 1.857 0 0 1 .1073-.2474 2.3426 2.3426 0 0 1 .1255-.2165 2.4572 2.4572 0 0 1 .1563-.1975 1.1736 1.1736 0 0 1 .399-.2831 1.082 1.082 0 0 1 .4592-.0837c.2355.0016.5139.052.91.1734.0555.0191.1237.0382.1856.0572.3277.1013.7048.2404 1.1499.3987.6863.2404 1.3663.487 2.0463.7397l1.2117.4423c.2217.0807.4363.18.6412.297.174.0984.3273.2298.4512.387a1.217 1.217 0 0 1 .192.4309 1.2205 1.2205 0 0 1-.872 1.4522c-.0468.0151-.0852.0239-.1085.0293l-1.105.2553-.0031-.001zM18.8208 7.565a1.8506 1.8506 0 0 0-.2042-.1754 2.4082 2.4082 0 0 0-.2077-.1394 2.3607 2.3607 0 0 0-.2269-.109 1.1705 1.1705 0 0 0-.482-.0796 1.0862 1.0862 0 0 0-.4498.1263c-.2107.1048-.4388.2732-.742.5551-.042.0417-.0947.0886-.142.133-.2502.2351-.5286.5252-.8599.863a114.6363 114.6363 0 0 0-1.5166 1.5629l-.8962.9293a4.1897 4.1897 0 0 0-.4466.5483 1.541 1.541 0 0 0-.2364.5459 1.2199 1.2199 0 0 0 .0107.4518l.0046.02a1.218 1.218 0 0 0 1.4184.923 1.162 1.162 0 0 0 .1105-.0213l4.7781-1.104c.3766-.087.7587-.1667 1.097-.3631.2269-.1316.4428-.262.5909-.5252a1.1793 1.1793 0 0 0 .1405-.4683c.0733-.6512-.2668-1.3908-.5403-1.963a6.2792 6.2792 0 0 0-1.2001-1.7103zM8.9703.0754a8.6724 8.6724 0 0 0-.83.1564c-.2754.066-.548.1383-.8146.2236-.868.2844-2.0884.8063-2.295 1.8065-.1165.5655.1595 1.1439.3737 1.66.2595.6254.614 1.1889.9373 1.7777.8543 1.5545 1.7245 3.0993 2.5922 4.6457.259.4617.5416 1.0464 1.043 1.2856a1.058 1.058 0 0 0 .1013.0383c.2248.0851.4699.1016.7041.0471a4.3015 4.3015 0 0 0 .0418-.0097 1.2136 1.2136 0 0 0 .5658-.3397 1.1033 1.1033 0 0 0 .079-.0822c.3463-.435.3454-1.0833.3764-1.6134.1042-1.771.2139-3.5423.3009-5.3142.0332-.6712.1055-1.3333.0655-2.0096-.0328-.5579-.0368-1.1984-.3891-1.6563-.6218-.8073-1.9476-.741-2.8523-.6158zm2.084 15.9505a1.1053 1.1053 0 0 0-1.2306-.4145 1.1398 1.1398 0 0 0-.1526.0633 1.4806 1.4806 0 0 0-.2171.1354c-.1992.1475-.3668.3392-.5196.5315-.0386.049-.074.1143-.12.1562l-.7686 1.0573a113.9168 113.9168 0 0 0-1.2913 1.789c-.278.3895-.5184.7184-.7083 1.0094-.036.0547-.0734.116-.1075.1647-.2277.3522-.3566.6092-.4228.8381a1.0945 1.0945 0 0 0-.046.4721c.0211.1655.0768.3246.1635.467.046.0715.0957.1406.1487.207a2.334 2.334 0 0 0 .1754.1825 1.843 1.843 0 0 0 .2108.1732c.5304.369 1.1112.6342 1.722.8391a6.0958 6.0958 0 0 0 1.5716.3004c.091.0046.1821.0025.2728-.006a2.3878 2.3878 0 0 0 .2506-.0351 2.3862 2.3862 0 0 0 .2447-.071 1.1927 1.1927 0 0 0 .4175-.2658c.1127-.113.1994-.249.2541-.3989.0889-.2214.1473-.5026.1857-.92.0034-.0593.0118-.1305.0177-.1958.0304-.3463.0443-.7531.0666-1.2315.0375-.7357.067-1.4681.0903-2.2026 0 0 .0495-1.3053.0494-1.306.0113-.3008.002-.6342-.0814-.9336a1.396 1.396 0 0 0-.1756-.4054zm8.6754 2.0439c-.1605-.176-.3878-.3514-.7462-.5682-.0518-.0288-.1124-.0674-.1684-.1009-.2985-.1795-.658-.3684-1.078-.5965a120.7615 120.7615 0 0 0-1.9427-1.042l-1.1515-.6107c-.0597-.0175-.1203-.0607-.1766-.0878-.2212-.1058-.4558-.2045-.6992-.2498a1.4915 1.4915 0 0 0-.2545-.0265 1.1527 1.1527 0 0 0-.1648.01 1.1077 1.1077 0 0 0-.9227.9133 1.4186 1.4186 0 0 0 .0159.439c.0563.3065.1932.6096.3346.875l.615 1.1526c.3422.65.6884 1.2963 1.0435 1.9406.229.4202.4196.7799.5982 1.078.0338.056.0721.1163.1011.1682.2173.3584.392.584.569.7458.1146.1107.252.195.4026.247.1583.0525.326.071.4919.0546a2.368 2.368 0 0 0 .251-.0435c.0817-.022.1622-.048.241-.0784a1.863 1.863 0 0 0 .2475-.1143 6.1018 6.1018 0 0 0 1.2818-.9597c.4596-.4522.8659-.9454 1.182-1.51.044-.08.0819-.163.1138-.2483a2.49 2.49 0 0 0 .0773-.2411c.0186-.083.033-.1669.0429-.2513a1.188 1.188 0 0 0-.0565-.491 1.0933 1.0933 0 0 0-.248-.4041z"/></svg></a>
+        <a class="soc" href="https://www.google.com/maps?q=4410+Rucker+Ave,+Everett,+WA+98203" target="_blank" rel="noopener" aria-label="Find Totem Family Diner on Google Maps"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>
+      </div>
+
+      <div class="perks">
+        <span class="perk"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg>Breakfast all day</span>
+        <span class="perk"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg>House-smoked BBQ</span>
+        <span class="perk"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg>Free parking</span>
+        <span class="perk"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg>Catering ready</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col foot-brand">
+        <div class="name">TOTEM</div>
+        <div class="sub">Family Diner Since '53</div>
+        <p>Everett's favorite classic diner. Breakfast all day, award-winning house-smoked BBQ, burgers, and fresh-baked pies on Rucker Ave.</p>
+        <div class="foot-soc socials" style="margin:0">
+          <a class="soc" href="https://www.facebook.com/totemdiner/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg></a>
+          <a class="soc" href="https://www.yelp.com/biz/totem-family-dining-everett?ylpcid=8c7351dabfd84ca692c1edb90b2c9a5c0061cc53" target="_blank" rel="noopener" aria-label="Yelp"><svg viewBox="0 0 24 24"><path d="m7.6885 15.1415-3.6715.8483c-.3769.0871-.755.183-1.1452.155-.2611-.0188-.5122-.0414-.7606-.213a1.179 1.179 0 0 1-.331-.3594c-.3486-.5519-.3656-1.3661-.3697-2.0004a6.2874 6.2874 0 0 1 .3314-2.0642 1.857 1.857 0 0 1 .1073-.2474 2.3426 2.3426 0 0 1 .1255-.2165 2.4572 2.4572 0 0 1 .1563-.1975 1.1736 1.1736 0 0 1 .399-.2831 1.082 1.082 0 0 1 .4592-.0837c.2355.0016.5139.052.91.1734.0555.0191.1237.0382.1856.0572.3277.1013.7048.2404 1.1499.3987.6863.2404 1.3663.487 2.0463.7397l1.2117.4423c.2217.0807.4363.18.6412.297.174.0984.3273.2298.4512.387a1.217 1.217 0 0 1 .192.4309 1.2205 1.2205 0 0 1-.872 1.4522c-.0468.0151-.0852.0239-.1085.0293l-1.105.2553-.0031-.001zM18.8208 7.565a1.8506 1.8506 0 0 0-.2042-.1754 2.4082 2.4082 0 0 0-.2077-.1394 2.3607 2.3607 0 0 0-.2269-.109 1.1705 1.1705 0 0 0-.482-.0796 1.0862 1.0862 0 0 0-.4498.1263c-.2107.1048-.4388.2732-.742.5551-.042.0417-.0947.0886-.142.133-.2502.2351-.5286.5252-.8599.863a114.6363 114.6363 0 0 0-1.5166 1.5629l-.8962.9293a4.1897 4.1897 0 0 0-.4466.5483 1.541 1.541 0 0 0-.2364.5459 1.2199 1.2199 0 0 0 .0107.4518l.0046.02a1.218 1.218 0 0 0 1.4184.923 1.162 1.162 0 0 0 .1105-.0213l4.7781-1.104c.3766-.087.7587-.1667 1.097-.3631.2269-.1316.4428-.262.5909-.5252a1.1793 1.1793 0 0 0 .1405-.4683c.0733-.6512-.2668-1.3908-.5403-1.963a6.2792 6.2792 0 0 0-1.2001-1.7103zM8.9703.0754a8.6724 8.6724 0 0 0-.83.1564c-.2754.066-.548.1383-.8146.2236-.868.2844-2.0884.8063-2.295 1.8065-.1165.5655.1595 1.1439.3737 1.66.2595.6254.614 1.1889.9373 1.7777.8543 1.5545 1.7245 3.0993 2.5922 4.6457.259.4617.5416 1.0464 1.043 1.2856a1.058 1.058 0 0 0 .1013.0383c.2248.0851.4699.1016.7041.0471a4.3015 4.3015 0 0 0 .0418-.0097 1.2136 1.2136 0 0 0 .5658-.3397 1.1033 1.1033 0 0 0 .079-.0822c.3463-.435.3454-1.0833.3764-1.6134.1042-1.771.2139-3.5423.3009-5.3142.0332-.6712.1055-1.3333.0655-2.0096-.0328-.5579-.0368-1.1984-.3891-1.6563-.6218-.8073-1.9476-.741-2.8523-.6158zm2.084 15.9505a1.1053 1.1053 0 0 0-1.2306-.4145 1.1398 1.1398 0 0 0-.1526.0633 1.4806 1.4806 0 0 0-.2171.1354c-.1992.1475-.3668.3392-.5196.5315-.0386.049-.074.1143-.12.1562l-.7686 1.0573a113.9168 113.9168 0 0 0-1.2913 1.789c-.278.3895-.5184.7184-.7083 1.0094-.036.0547-.0734.116-.1075.1647-.2277.3522-.3566.6092-.4228.8381a1.0945 1.0945 0 0 0-.046.4721c.0211.1655.0768.3246.1635.467.046.0715.0957.1406.1487.207a2.334 2.334 0 0 0 .1754.1825 1.843 1.843 0 0 0 .2108.1732c.5304.369 1.1112.6342 1.722.8391a6.0958 6.0958 0 0 0 1.5716.3004c.091.0046.1821.0025.2728-.006a2.3878 2.3878 0 0 0 .2506-.0351 2.3862 2.3862 0 0 0 .2447-.071 1.1927 1.1927 0 0 0 .4175-.2658c.1127-.113.1994-.249.2541-.3989.0889-.2214.1473-.5026.1857-.92.0034-.0593.0118-.1305.0177-.1958.0304-.3463.0443-.7531.0666-1.2315.0375-.7357.067-1.4681.0903-2.2026 0 0 .0495-1.3053.0494-1.306.0113-.3008.002-.6342-.0814-.9336a1.396 1.396 0 0 0-.1756-.4054zm8.6754 2.0439c-.1605-.176-.3878-.3514-.7462-.5682-.0518-.0288-.1124-.0674-.1684-.1009-.2985-.1795-.658-.3684-1.078-.5965a120.7615 120.7615 0 0 0-1.9427-1.042l-1.1515-.6107c-.0597-.0175-.1203-.0607-.1766-.0878-.2212-.1058-.4558-.2045-.6992-.2498a1.4915 1.4915 0 0 0-.2545-.0265 1.1527 1.1527 0 0 0-.1648.01 1.1077 1.1077 0 0 0-.9227.9133 1.4186 1.4186 0 0 0 .0159.439c.0563.3065.1932.6096.3346.875l.615 1.1526c.3422.65.6884 1.2963 1.0435 1.9406.229.4202.4196.7799.5982 1.078.0338.056.0721.1163.1011.1682.2173.3584.392.584.569.7458.1146.1107.252.195.4026.247.1583.0525.326.071.4919.0546a2.368 2.368 0 0 0 .251-.0435c.0817-.022.1622-.048.241-.0784a1.863 1.863 0 0 0 .2475-.1143 6.1018 6.1018 0 0 0 1.2818-.9597c.4596-.4522.8659-.9454 1.182-1.51.044-.08.0819-.163.1138-.2483a2.49 2.49 0 0 0 .0773-.2411c.0186-.083.033-.1669.0429-.2513a1.188 1.188 0 0 0-.0565-.491 1.0933 1.0933 0 0 0-.248-.4041z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#bbq">BBQ &amp; Catering</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Visit Us</h4>
+        <ul class="foot-contact">
+          <li><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>4410 Rucker Ave, Everett, WA 98203</li>
+          <li><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg><a href="tel:+14252523277">(425) 252-3277</a></li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10V6h-2v7l5.2 3.1 1-1.7z"/></svg>Mon&ndash;Fri 7am&ndash;2pm · Sat&ndash;Sun 7am&ndash;3pm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    &copy; <span id="year"></span> Totem Family Diner · Family owned in Everett since 1953 · <a href="https://www.totemdiner.com" target="_blank" rel="noopener">totemdiner.com</a>
+  </div>
+</footer>
+
+<!-- ============ FLOATING + SCROLLTOP ============ -->
+<div class="floaters" id="floaters">
+  <a class="float-btn float-call" href="tel:+14252523277"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg><span>Call</span></a>
+  <a class="float-btn float-order" href="#menu"><svg viewBox="0 0 24 24"><path d="M3 4h18v2H3zm2 4h14l-1 12H6zm4 3v6h2v-6zm4 0v6h2v-6z"/></svg><span>Order</span></a>
+</div>
+<button class="scrolltop" id="scrolltop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12z"/></svg></button>
+
+<script>
+
+/* HOURS (24h) — single source of truth. Keyed by getDay(): 0=Sun..6=Sat */
+const HOURS = {
+  0:{open:7, close:15, label:'Sunday'},
+  1:{open:7, close:14, label:'Monday'},
+  2:{open:7, close:14, label:'Tuesday'},
+  3:{open:7, close:14, label:'Wednesday'},
+  4:{open:7, close:14, label:'Thursday'},
+  5:{open:7, close:14, label:'Friday'},
+  6:{open:7, close:15, label:'Saturday'}
+};
+
+function fmt(h){
+  const hr = Math.floor(h), min = Math.round((h-hr)*60);
+  const ampm = hr>=12?'PM':'AM'; let d = hr%12; if(d===0) d=12;
+  return min ? `${d}:${String(min).padStart(2,'0')} ${ampm}` : `${d} ${ampm}`;
+}
+function getStatus(now){
+  const day = now.getDay(), h = now.getHours()+now.getMinutes()/60, today = HOURS[day];
+  if(h>=today.open && h<today.close) return {open:true, closesAt:today.close, day};
+  if(h<today.open) return {open:false, nextLabel:'today', opensAt:today.open, day};
+  for(let i=1;i<=7;i++){
+    const d=(day+i)%7, slot=HOURS[d];
+    if(slot) return {open:false, nextLabel:(i===1)?'tomorrow':slot.label, opensAt:slot.open, day};
+  }
+}
+function applyStatus(){
+  const s = getStatus(new Date());
+  const heroDot=document.getElementById('heroDot'), heroStatus=document.getElementById('heroStatus');
+  const liveBadge=document.getElementById('liveBadge'), hoursNote=document.getElementById('hoursNote'), announce=document.getElementById('announce');
+  if(s.open){
+    heroDot.classList.add('is-open');
+    heroStatus.textContent = `Open Now · til ${fmt(s.closesAt)} · Everett, WA`;
+    liveBadge.className='live-badge open'; liveBadge.textContent='● Open Now';
+    hoursNote.textContent = `We're open and serving until ${fmt(s.closesAt)} today. Come on in.`;
+    announce.innerHTML = `<strong>Open now</strong> · Serving until ${fmt(s.closesAt)} today · Call <a href="tel:+14252523277">(425) 252-3277</a>`;
+  } else {
+    heroDot.classList.remove('is-open');
+    heroStatus.textContent = `Closed · Opens ${s.nextLabel} ${fmt(s.opensAt)} · Everett, WA`;
+    liveBadge.className='live-badge closed'; liveBadge.textContent='● Closed Now';
+    const when = s.nextLabel==='today' ? `later today at ${fmt(s.opensAt)}` : `${s.nextLabel} at ${fmt(s.opensAt)}`;
+    hoursNote.textContent = `We're closed right now. Come back ${when}.`;
+    announce.innerHTML = `<strong>Closed now</strong> · Opens ${s.nextLabel} at ${fmt(s.opensAt)} · Come hungry`;
+  }
+  document.querySelectorAll('#hoursList li').forEach(li=>li.classList.toggle('today', Number(li.dataset.day)===s.day));
+}
+applyStatus();
+setInterval(applyStatus, 60000);
+
+/* navbar scroll + floaters + scrolltop */
+const nav=document.getElementById('nav'), floaters=document.getElementById('floaters'), scrolltop=document.getElementById('scrolltop');
+function onScroll(){
+  const y=window.scrollY;
+  nav.classList.toggle('scrolled', y>40);
+  floaters.classList.toggle('show', y>400);
+  scrolltop.classList.toggle('show', y>600);
+}
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+/* mobile overlay */
+const burger=document.getElementById('burger'), overlay=document.getElementById('overlay'), overlayClose=document.getElementById('overlayClose');
+function openMenu(){overlay.classList.add('open');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+function closeMenu(){overlay.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+burger.addEventListener('click', openMenu);
+overlayClose.addEventListener('click', closeMenu);
+overlay.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
+
+/* menu tabs */
+document.querySelectorAll('.tab').forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.panel).classList.add('active');
+  });
+});
+
+/* reveal on scroll */
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* smooth scroll with nav offset */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    const id=a.getAttribute('href');
+    if(id==='#'||id.length<2) return;
+    const target=document.querySelector(id); if(!target) return;
+    e.preventDefault();
+    const top=target.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({top, behavior:'smooth'});
+  });
+});
+
+/* scroll to top */
+scrolltop.addEventListener('click', ()=>window.scrollTo({top:0, behavior:'smooth'}));
+
+/* year */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* image fallback */
+document.querySelectorAll('img').forEach(img=>{
+  img.addEventListener('error', ()=>{
+    if(img.dataset.fallback) return;
+    img.dataset.fallback='1';
+    img.src='data:image/svg+xml,'+encodeURIComponent(
+      `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="100%" height="100%" fill="#b0231c"/><text x="50%" y="50%" fill="#f5efe3" font-family="sans-serif" font-size="26" text-anchor="middle" dominant-baseline="middle">Add your photo</text></svg>`
+    );
+  });
+});
+</script>
+</body>
+</html>
